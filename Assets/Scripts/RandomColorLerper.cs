@@ -80,6 +80,6 @@ public class RandomColorLerper : MonoBehaviour {
         r = Random.Range(MINRGB, MAXRGB)/MAXRGB;
         g = Random.Range(MINRGB, MAXRGB)/MAXRGB;
         b = Random.Range(MINRGB, MAXRGB)/MAXRGB;
-        return new Color(r,g,b);
+        return new Color(r,g,b, 0.25f);
     }
 }

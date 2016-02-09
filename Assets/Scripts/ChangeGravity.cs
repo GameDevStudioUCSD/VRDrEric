@@ -10,11 +10,8 @@ public class ChangeGravity : MonoBehaviour {
     Vector3 randDirection = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
     void OnCollisionEnter(Collision collision)
     {
-            Physics.gravity = speed * randDirection.normalized;
-        if(collision.gameObject.tag == "Player")
-        {
-        }
-        if(collision.gameObject.tag == "Wall")
+        Physics.gravity = speed * randDirection.normalized;
+        if (collision.gameObject.tag == "Wall")
         {
             Destroy(this.gameObject);
         }
