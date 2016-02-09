@@ -4,7 +4,7 @@ using System.Collections;
 public class ChangeGravity : MonoBehaviour {
 
     public Vector3 direction = Vector3.down * 9.81f;
-    public float speed = 1f;
+    public float speed = 9f;
     //public float 
 
     Vector3 randDirection = new Vector3(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
