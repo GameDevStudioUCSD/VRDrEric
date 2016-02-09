@@ -11,6 +11,7 @@ public class ChangeGravity : MonoBehaviour {
         if(collision.gameObject.tag == "Player")
         {
             Physics.gravity = 9.81f * randDirection.normalized;
+            Destroy(this.gameObject);
         }
         if(collision.gameObject.tag == "Wall")
         {
